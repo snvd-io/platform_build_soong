@@ -897,6 +897,13 @@ var (
 
 		// java_resources with multiple resource_dirs
 		"emma",
+
+		// NDK STL
+		"ndk_libc++abi",
+		"ndk_libunwind",
+		"ndk_libc++_static",
+		"ndk_libc++_shared",
+		"ndk_system",
 	}
 
 	Bp2buildModuleTypeAlwaysConvertList = []string{
@@ -911,6 +918,9 @@ var (
 		"java_sdk_library",
 		"sysprop_library",
 		"xsd_config",
+		"aconfig_declarations",
+		"aconfig_values",
+		"aconfig_value_set",
 	}
 
 	// Add the names of modules that bp2build should never convert, if it is
