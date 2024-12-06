@@ -309,6 +309,7 @@ def append_additional_system_props(args):
     # Target is secure in user builds.
     props.append("ro.secure=1")
     props.append("security.perf_harden=1")
+    props.append("ro.control_privapp_permissions=enforce")
 
     if config["BuildVariant"] == "user":
       # Disable debugging in plain user builds.
