@@ -311,6 +311,7 @@ def append_additional_system_props(args):
     props.append("security.perf_harden=1")
     props.append("ro.control_privapp_permissions=enforce")
     props.append("persist.security.deny_new_usb=dynamic")
+    props.append("net.tethering.noprovisioning=true")
 
     if config["BuildVariant"] == "user":
       # Disable debugging in plain user builds.
